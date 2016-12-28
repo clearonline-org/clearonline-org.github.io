@@ -1,6 +1,59 @@
-# AngularCountdown
+<!--
+@Author: mars
+@Date:   2016-12-28T03:12:38-05:00
+@Last modified by:   mars
+@Last modified time: 2016-12-28T03:14:11-05:00
+-->
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+# angular-tutorial-countdown
+angular-cli, angular-material, angular-moment
+
+# Goal
+Count down till end of year
+
+# Step by step
+
+* install angula cli
+```sh
+npm install -g angular-cli
+```
+* create new project/app
+```sh
+ng new angular-countdown
+```
+* install required dependancies
+```sh
+npm install --save @angular/material
+npm install --save angular2-moment
+```
+* import external modules
+```javascript
+// src/app/app.module.ts
+@NgModule({
+  ...
+  imports: [
+    ...
+    MomentModule,
+    MaterialModule.forRoot(),
+    ...
+  ],
+  ...
+})
+```
+* create a countdown component
+```sh
+ng generate component countdown-component
+```
+* add logic to the component
+```
+
+```
+* register the component
+* display the component
+
+
+
+
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
