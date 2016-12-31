@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "",
+    "baseUrl": "/map-countdown/",
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
