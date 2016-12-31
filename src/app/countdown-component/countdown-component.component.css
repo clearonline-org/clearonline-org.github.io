@@ -2,15 +2,16 @@
 * @Author: mars
 * @Date:   2016-12-28T01:01:23-05:00
 * @Last modified by:   mars
-* @Last modified time: 2016-12-28T02:57:56-05:00
+* @Last modified time: 2016-12-31T02:02:35-05:00
 */
 
 .fill-page {
-  height: calc(100vh - 1em);
+  /*height: calc(100vh - 1em);*/
   padding: 0;
 }
 .blue-sky {
-  background-color: #87CEFA;
+  /*background-color: #87CEFA;*/
+  background-color: transparent;
 }
 
 .fill-page .vertical-wrapper {

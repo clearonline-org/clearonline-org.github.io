@@ -18,11 +18,15 @@ import { CountdownComponentComponent } from './countdown-component/countdown-com
 // modules
 import { MaterialModule } from '@angular/material';
 import {MomentModule} from 'angular2-moment';
+import { MapComponentComponent } from './map-component/map-component.component';
+import { AmmapViewComponent } from './ammap-view/ammap-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CountdownComponentComponent
+    CountdownComponentComponent,
+    MapComponentComponent,
+    AmmapViewComponent
   ],
   imports: [
     BrowserModule,

@@ -2,10 +2,10 @@
 @Author: mars
 @Date:   2016-12-28T03:12:38-05:00
 @Last modified by:   mars
-@Last modified time: 2016-12-28T03:14:11-05:00
+@Last modified time: 2016-12-29T19:25:39-05:00
 -->
 
-# angular-tutorial-countdown
+# countdown
 angular-cli, angular-material, angular-moment
 
 # Goal
