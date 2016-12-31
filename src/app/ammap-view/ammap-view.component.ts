@@ -31,7 +31,6 @@ export class AmmapViewComponent implements OnInit {
   _computeEndOfYearTime() {
 
     this.endOfYear = this._computeEndOfYearTimeByCountry(this.currentCode);
-
     this.initializing = false;
 
   }
@@ -61,7 +60,6 @@ export class AmmapViewComponent implements OnInit {
 
       //   // c.title = `${c.title} -> ${endOfYear.diff(today, 'seconds')}`;
       // });
-
 
       let map;
 
