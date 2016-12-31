@@ -48,19 +48,19 @@ export class AmmapViewComponent implements OnInit {
       let self = this;
 
 
-      countries.forEach(c => {
-        console.log(c.code);
-        let endOfYear, today;
-        try {
-          endOfYear = this._computeEndOfYearTimeByCountry(c.code || 'US');
-          today = CountryTime.now(c.code || 'US');
-        } catch(e){
-          endOfYear = this._computeEndOfYearTimeByCountry('US');
-          today = CountryTime.now('US');
-        }
+      // countries.forEach(c => {
+      //   console.log(c.code);
+      //   let endOfYear, today;
+      //   try {
+      //     endOfYear = this._computeEndOfYearTimeByCountry(c.code || 'US');
+      //     today = CountryTime.now(c.code || 'US');
+      //   } catch(e){
+      //     endOfYear = this._computeEndOfYearTimeByCountry('US');
+      //     today = CountryTime.now('US');
+      //   }
 
-        // c.title = `${c.title} -> ${endOfYear.diff(today, 'seconds')}`;
-      });
+      //   // c.title = `${c.title} -> ${endOfYear.diff(today, 'seconds')}`;
+      // });
 
 
       let map;
