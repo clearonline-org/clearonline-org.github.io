@@ -2,7 +2,7 @@
 * @Author: mars
 * @Date:   2016-12-31T00:30:20-05:00
 * @Last modified by:   mars
-* @Last modified time: 2016-12-31T03:35:31-05:00
+* @Last modified time: 2016-12-31T20:36:57-05:00
 */
 
 
@@ -10,7 +10,7 @@
   margin-left: auto;
   margin-right: auto;
   height: 150px;
-  width: 300px;
+  width: 100%;
   padding: 0;
 }
 .blue-sky {
@@ -42,6 +42,13 @@
   text-shadow: 1px 1px black;
 }
 
+.fill-page .topleft-corner {
+  position: absolute;
+  left: 1em;
+  font-size: 14px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
 
 .top-corner {
   position: absolute;

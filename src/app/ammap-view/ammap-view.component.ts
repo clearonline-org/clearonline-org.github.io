@@ -2,7 +2,7 @@
 * @Author: mars
 * @Date:   2016-12-31T00:30:20-05:00
 * @Last modified by:   mars
-* @Last modified time: 2016-12-31T03:35:52-05:00
+* @Last modified time: 2016-12-31T20:42:28-05:00
 */
 
 
@@ -20,7 +20,8 @@ export class AmmapViewComponent implements OnInit {
 
   countryName: string = 'United States';
   currentCode: string = 'US';
-  endOfYear: Array<any>;
+  currentTz: string = 'America/New_York';
+  endOfYear: any;
   initializing: boolean = false;
   constructor() {
     this.initializing = true;
@@ -31,6 +32,7 @@ export class AmmapViewComponent implements OnInit {
   _computeEndOfYearTime() {
 
     this.endOfYear = this._computeEndOfYearTimeByCountry(this.currentCode);
+    this.currentTz = this.endOfYear.tz();
     this.initializing = false;
 
   }
@@ -121,7 +123,7 @@ console.log(this.endOfYear);
     }
 
 
-    _computeEndOfYearTimeByCountry(countryCode) {
+    _computeEndOfYearTimeByCountry(countryCode): any {
       let endOfYear = CountryTime.now(countryCode);
       endOfYear.month(11);
       endOfYear.date(31);
@@ -143,11 +145,13 @@ console.log(this.endOfYear);
       */
       "type": "map",
       "imagesSettings": {
-        "rollOverColor": "#089282",
+        "rollOverColor": "#f1faff",
         "rollOverScale": 3,
         "selectedScale": 3,
-        "selectedColor": "#089282",
-        "color": "#13564e"
+        // "selectedColor": "#089282",
+        "selectedColor": "#f1faff",
+        // "color": "#13564e"
+        "color": "#a8dbfb" //
       },
       /**
       * create data provider object
