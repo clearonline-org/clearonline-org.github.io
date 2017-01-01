@@ -2,13 +2,12 @@
 * @Author: mars
 * @Date:   2016-12-31T00:30:20-05:00
 * @Last modified by:   mars
-* @Last modified time: 2016-12-31T20:42:28-05:00
+* @Last modified time: 2016-12-31T23:51:30-05:00
 */
 
 
 
 import { Component, OnInit } from '@angular/core';
-
 import { countries } from './map-data';
 
 @Component({
@@ -25,7 +24,6 @@ export class AmmapViewComponent implements OnInit {
   initializing: boolean = false;
   constructor() {
     this.initializing = true;
-
   }
 
 
@@ -34,6 +32,8 @@ export class AmmapViewComponent implements OnInit {
     this.endOfYear = this._computeEndOfYearTimeByCountry(this.currentCode);
     this.currentTz = this.endOfYear.tz();
     this.initializing = false;
+
+    console.log('hello!!');
 
   }
 
