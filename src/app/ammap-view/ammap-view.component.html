@@ -2,7 +2,7 @@
 @Author: mars
 @Date:   2016-12-31T00:30:20-05:00
 @Last modified by:   mars
-@Last modified time: 2016-12-31T20:40:34-05:00
+@Last modified time: 2017-01-04T20:54:20-05:00
 -->
 
 
@@ -14,6 +14,8 @@
     <div class="vertical-center">
       <span class="topleft-corner">{{currentTz}}</span>
       <span class="top-corner">{{countryName}}</span>
+      <span class="bottomleft-corner">{{currentYear}} ends</span>
+      <span class="bottomright-corner">{{currentTime}}</span>
       <div class="box title" *ngIf="!initializing">
         {{endOfYear | amDifference: today :'seconds' }}
       </div>

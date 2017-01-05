@@ -2,7 +2,7 @@
 * @Author: mars
 * @Date:   2016-12-31T00:30:20-05:00
 * @Last modified by:   mars
-* @Last modified time: 2016-12-31T23:51:30-05:00
+* @Last modified time: 2017-01-04T20:59:23-05:00
 */
 
 
@@ -17,9 +17,12 @@ import { countries } from './map-data';
 })
 export class AmmapViewComponent implements OnInit {
 
+
   countryName: string = 'United States';
   currentCode: string = 'US';
   currentTz: string = 'America/New_York';
+  currentYear: string = '2017';
+  currentTime: string = '00:00:00 AM'
   endOfYear: any;
   initializing: boolean = false;
   constructor() {
@@ -31,6 +34,9 @@ export class AmmapViewComponent implements OnInit {
 
     this.endOfYear = this._computeEndOfYearTimeByCountry(this.currentCode);
     this.currentTz = this.endOfYear.tz();
+    this.currentYear = this.endOfYear.get('year');
+    this.currentTime = CountryTime.now(this.currentCode).format('hh:mm:ss a');
+
     this.initializing = false;
 
     console.log('hello!!');
